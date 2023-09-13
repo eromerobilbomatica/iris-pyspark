@@ -26,7 +26,9 @@
 1. Instalalo las dependencias
     1. Incluyo pyspark==3.3.1 en el src/requirements.txt
     1. pip install -r src/requirements.txt
-
+1. Java: 
+    1. Instalación: sudo apt update && sudo apt install openjdk-8-jdk-headless
+    1. Desintalación: sudo apt remove openjdk-8-jdk-headless
 <!-- 1. Instalo java
     1. wget https://builds.openlogic.com/downloadJDK/openlogic-openjdk/8u362-b09/openlogic-openjdk-8u362-b09-linux-x64.tar.gz
     1. tar -xvzf openlogic-openjdk-8u362-b09-linux-x64.tar.gz
@@ -40,3 +42,4 @@
         1. sudo rm -f /usr/bin/java
         1. sudo rm -f /usr/lib/jvm/default-java
     1. Eliminar las entradas de Java del menú de actualización de alternativas: sudo update-alternatives --remove-all java -->
+
