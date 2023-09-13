@@ -23,4 +23,13 @@
     1. git add .
     1. git commit -m "añado instrucción README_EDU.md"
     1. git push -u origin main
-    
+1. Instalalo las dependencias
+    1. Incluyo pyspark==3.3.1 en el src/requirements.txt
+    1. pip install -r src/requirements.txt
+1. Instalo java
+    1. wget https://builds.openlogic.com/downloadJDK/openlogic-openjdk/8u362-b09/openlogic-openjdk-8u362-b09-linux-x64.tar.gz
+    1. tar -xvzf openlogic-openjdk-8u362-b09-linux-x64.tar.gz
+    1. sudo mv openlogic-openjdk-8u362-b09-linux-x64 /usr/lib/jvm/
+    1. sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/bin/java 1
+    1. sudo update-alternatives --config java
+    1. para comprobar que la versión java coincide con el DEMML ``java -version``
