@@ -18,4 +18,9 @@
     1. git init
     1. Creo el repo en Github con el nombre "iris-pyspark"
     1. git remote add origin https://github.com/eromerobilbomatica/iris-pyspark.git
+    1. **Para poder hacer push he tenido que poner como colaborador a mi usuario de github personal  en el repo que tengo con la cuenta de bilbomática porque 
+    no he podido cambiarlo en git, por defecto me está manteniendo el usuario IngTecEduardo y de ahí que haya que darle permisos a este.**
+    1. git add .
+    1. git commit -m "añado instrucción README_EDU.md"
+    1. git push -u origin main
     
