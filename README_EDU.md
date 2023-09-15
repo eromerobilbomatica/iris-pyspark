@@ -44,3 +44,14 @@
             1. sudo rm -f /usr/lib/jvm/default-java
         1. Eliminar las entradas de Java del menú de actualización de alternativas: sudo update-alternatives --remove-all java
 
+
+# Correcciones
+
+## Kedro no me cagar el catalog en el jupyterlab
+
+Dentro del jupyterlab levantado con ``kedro jupyter lab`` ejecutar en una celda:
+
+````
+%load_ext kedro.extras.extensions.ipython
+%reload_kedro
+````

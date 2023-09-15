@@ -10,13 +10,25 @@
 # https://kedro.readthedocs.io/en/stable/data/data_catalog.html
 #
 
-iris_local:
-  type: spark.SparkDataSet
-  filepath: data/01_raw/iris.csv
-  file_format: "csv"
+# iris_local:
+#   type: spark.SparkDataSet
+#   filepath: data/01_raw/iris.csv
+#   file_format: "csv"
+#   load_args:
+#     header: True
+#     inferSchema: True
+#   save_args:
+#     sep: ','
+#     header: True
+
+## añade al catalog un csv en un bucket de minio
+data_raw_minio:
+  type: pandas.CSVDataSet
+  filepath: s3://prueba.concepto.eduardo/data/QUERES_DATCOM_2306071810.csv
   load_args:
-    header: True
-    inferSchema: True
+    sep: '|'
   save_args:
-    sep: ','
-    header: True
+    index: False
+    encoding: "utf-8"
+  credentials: dev_minio
+  layer: raw
