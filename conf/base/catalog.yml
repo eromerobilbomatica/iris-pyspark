@@ -32,3 +32,9 @@ data_raw_minio:
     encoding: "utf-8"
   credentials: dev_minio
   layer: raw
+
+# iris:
+#   type: spark.SparkDataSet
+#   filepath: s3a://warehouse/default/IRIS_EDU_V3/metadata/*
+#   file_format: arvo
+#   credentials: dev_minio
