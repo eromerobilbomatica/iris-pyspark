@@ -12,7 +12,7 @@ class SparkHooks:
         """
 
         dst_lh_url  = os.environ.get('DST_LH_URL', 'spark://spark-master-0.spark-headless.demml.svc.cluster.local:7077')
-        dst_lh_appn = os.environ.get('DST_LH_APPN', 'iris_naive_bayes_classification_pyspark_EDU_4')
+        dst_lh_appn = os.environ.get('DST_LH_APPN', 'conexion_pyspark_iceberg_edu')
         my_pod_ip = subprocess.run(['hostname', '-I'], stdout=subprocess.PIPE).stdout.decode('utf-8').strip(' \n\t')
 
         spark = SparkSession.builder \
