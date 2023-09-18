@@ -21,15 +21,18 @@ data_raw_minio:
   credentials: dev_minio
   layer: raw
 
-# data_raw_minio:
+# data_raw_iceberg:
 #   type: spark.SparkDataSet
-#   filepath: s3a://warehouse/default/IRIS_EDU_V3/*
+#   filepath: s3a://warehouse/default/IRIS_EDU_V3/metadata/snap-8453383644477174817-1-854e2de2-9c85-4eda-a331-cff2b0e6504e.avro
 #   file_format: "avro"
-#   load_args:
-#     file_format: iceberg
 #   credentials:
 #     access_key: admin
 #     secret_key: t4bl4red0nd4
+#   load_args:
+#     file_format: iceberg
+#     schema: 
+#       filepath: s3a://warehouse/default/IRIS_EDU_V3/metadata/00001-b447b32a-d63a-4a36-8e82-0b1cae03c76f.metadata.json
+
 
 # ## añade al catalog un csv en un bucket de minio
 # data_raw_minio:
