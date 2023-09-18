@@ -61,9 +61,9 @@ Dentro del jupyterlab levantado con ``kedro jupyter lab`` ejecutar en una celda:
 En el archivo ``nano ~/.bashrc`` (para que tenga efecto más allá de esta sesión) agrego al final:
 
 ````
-export AWS_REGION="us-east-1"
-export AWS_ACCESS_KEY_ID="admin"
-export AWS_SECRET_ACCESS_KEY="t4bl4red0nd4"
+export AWS_REGION="****"
+export AWS_ACCESS_KEY_ID="****"
+export AWS_SECRET_ACCESS_KEY="****"
 ````
 
 cargo los cambios en la sesión actual ``source ~/.bashrc``
@@ -73,9 +73,9 @@ cargo los cambios en la sesión actual ``source ~/.bashrc``
 Creo en la raiz del proyecto el archivo ``.env`` y le añado:
 
 ````
-AWS_REGION="us-east-1"
-AWS_ACCESS_KEY_ID="admin"
-AWS_SECRET_ACCESS_KEY="t4bl4red0nd4"
+AWS_REGION="****"
+AWS_ACCESS_KEY_ID="****"
+AWS_SECRET_ACCESS_KEY="****"
 ````
 
 y añado en el archivo ``settings.py`` la siguientes lineas al comienzo:
