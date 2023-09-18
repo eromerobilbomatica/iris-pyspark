@@ -55,3 +55,21 @@ Dentro del jupyterlab levantado con ``kedro jupyter lab`` ejecutar en una celda:
 %load_ext kedro.extras.extensions.ipython
 %reload_kedro
 ````
+
+## Mapeo de dns en el archivo etc/hosts
+
+### version de linux usada
+
+````
+(demml) coder@coder-eromero-eromero-bcfbb95bd-d4kc5:~/eromero/iris-pyspark$ lsb_release -a
+No LSB modules are available.
+Distributor ID: Ubuntu
+Description:    Ubuntu 20.04.6 LTS
+Release:        20.04
+Codename:       focal
+````
+
+### instalación nano y ping
+
+* nano: ``sudo apt update && sudo apt install nano``
+* ping: ``sudo apt install iputils-ping``
