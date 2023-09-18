@@ -2,6 +2,9 @@
 from the Kedro defaults. For further information, including these default values, see
 https://kedro.readthedocs.io/en/stable/kedro_project_setup/settings.html."""
 
+import dotenv
+dotenv.load_dotenv()
+
 # Instantiated project hooks.
 from iris_pyspark.hooks import SparkHooks  # noqa: import-outside-toplevel
 
@@ -40,3 +43,4 @@ CONFIG_LOADER_ARGS = {
 # Class that manages the Data Catalog.
 # from kedro.io import DataCatalog
 # DATA_CATALOG_CLASS = DataCatalog
+

@@ -56,6 +56,34 @@ Dentro del jupyterlab levantado con ``kedro jupyter lab`` ejecutar en una celda:
 %reload_kedro
 ````
 
+## Añado las variables de entorno de AWS
+
+En el archivo ``nano ~/.bashrc`` (para que tenga efecto más allá de esta sesión) agrego al final:
+
+````
+export AWS_REGION="us-east-1"
+export AWS_ACCESS_KEY_ID="admin"
+export AWS_SECRET_ACCESS_KEY="t4bl4red0nd4"
+````
+
+cargo los cambios en la sesión actual ``source ~/.bashrc``
+
+### Variables de entorno de AWS en kedro
+
+Creo en la raiz del proyecto el archivo ``.env`` y le añado:
+
+````
+AWS_REGION="us-east-1"
+AWS_ACCESS_KEY_ID="admin"
+AWS_SECRET_ACCESS_KEY="t4bl4red0nd4"
+````
+
+y añado en el archivo ``settings.py`` la siguientes lineas al comienzo:
+
+````
+import dotenv
+dotenv.load_dotenv()
+````
 ## Mapeo de dns en el archivo etc/hosts
 
 ### version de linux usada
