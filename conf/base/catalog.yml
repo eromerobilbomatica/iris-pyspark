@@ -25,3 +25,8 @@ iris_iceberg_table:
   type: spark.SparkDataSet
   filepath: s3a://warehouse/default/IRIS_EDU_V5/data/*
   file_format: parquet
+  layer: preprocessed_data
+
+naiveBayes_model:
+  type: MemoryDataSet
+  copy_mode: assign
