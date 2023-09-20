@@ -4,6 +4,11 @@
     1. wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
     1. chmod +x Miniconda3-latest-Linux-x86_64.sh
     1. bash Miniconda3-latest-Linux-x86_64.sh
+
+        ```
+        cd ~/eromero/ && chmod +x Miniconda3-latest-Linux-x86_64.sh && bash Miniconda3-latest-Linux-x86_64.sh
+        ```
+
 1. Crear env. python 3.8.13
     1. Abrir nueva terminal
     1. conda create --name demml python=3.8.13
@@ -36,6 +41,11 @@
     1. sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/bin/java 1
     1. sudo update-alternatives --config java
     1. para comprobar que la versión java coincide con el DEMML ``java -version``
+
+        ```
+        cd ~/eromero/ && tar -xvzf openlogic-openjdk-8u362-b09-linux-x64.tar.gz && sudo mv openlogic-openjdk-8u362-b09-linux-x64 /usr/lib/jvm/ && sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/bin/java 1 && sudo update-alternatives --config java && java -version
+        ```
+
 
     * En el caso de tener que desintalar de esta versión de java por completo
         1. Eliminar el directorio Java: sudo rm -rf /usr/lib/jvm/openlogic-openjdk-8u362-b09-linux-x64
